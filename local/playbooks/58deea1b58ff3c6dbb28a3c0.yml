@@ -1,0 +1,19 @@
+---
+- name: master_instance
+  hosts: master
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  become_user: root
+  roles:
+    - dockerSwarm
+    - masternode
+
+- name: slave-node
+  remote_user: ubuntu
+  hosts: slaves
+  become: yes
+  become_method: sudo
+  become_user: root
+  roles:
+    - slaves

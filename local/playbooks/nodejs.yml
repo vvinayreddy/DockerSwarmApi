@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  vars: 
+    version: 4.7.3
+  roles:
+    - nodejs

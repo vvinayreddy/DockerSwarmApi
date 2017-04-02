@@ -1,0 +1,5 @@
+{
+        "accessKeyId": "access.key",
+        "secretAccessKey": "secret.key",
+        "region": "aws.region"
+}
